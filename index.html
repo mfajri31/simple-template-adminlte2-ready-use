@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>AdminLTE 2</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.datatables.net/v/bs/jq-3.6.0/dt-1.13.4/r-2.4.1/datatables.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/css/AdminLTE.min.css" />
+  <link rel="stylesheet" href="assets/css/skins/skin-blue.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+    <header class="main-header">
+      <a href="" class="logo">
+        <span class="logo-mini"><b>A</b>LT</span>
+        <span class="logo-lg"><b>Admin</b>LTE</span>
+      </a>
+
+      <nav class="navbar navbar-static-top" role="navigation">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown tasks-menu"></li>
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="assets/img/profile.jpg" class="user-image" alt="User Image" />
+                <span class="hidden-xs">Alexander Pierce</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="user-header">
+                  <img src="assets/img/profile.jpg" class="img-circle" alt="User Image" />
+
+                  <p>Alexander Pierce</p>
+                </li>
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-primary btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-danger btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="main-sidebar">
+      <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">MENU UTAMA</li>
+          <li class="active">
+            <a href="#"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+          </li>
+          <li class="treeview">
+            <a href="#"><i class="fa fa-th-list"></i> <span>Menu Dropdown</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#">
+                  <i class="fa fa-link"></i>Menu 1
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-link"></i>Menu 2
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="content-wrapper">
+      <section class="content-header">
+        <h1>Dashboard</h1>
+      </section>
+
+      <section class="content container-fluid">
+
+        <!-- Halaman Dashboard -->
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="small-box bg-blue">
+              <div class="inner">
+                <h3>100</h3>
+                <p>Total Users</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <a href="" class="small-box-footer">Selengkapnya
+                <i class="fa fa-arrow-circle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /Halaman Dashboard -->
+
+        <!-- Halaman List Data -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="box box-primary">
+              <div class="box-header">
+                <a href="" class="btn btn-primary btn-sm pull-right">
+                  <i class="fa fa-plus"></i>
+                  Tambah Data
+                </a>
+              </div>
+              <div class="box-body table-responsive">
+                <table class="table table-bordered table-hover">
+                  <thead class="bg-primary">
+                    <tr>
+                      <th width="5%" class="text-center">No</th>
+                      <th>Nama</th>
+                      <th width="10%">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">1</td>
+                      <td>Lorem</td>
+                      <td class="text-center">
+                        <a href="" class="btn btn-success btn-xs">
+                          <i class="fa fa-edit"></i>
+                        </a>
+                        <a href="" class="btn btn-danger btn-xs">
+                          <i class="fa fa-trash"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Halaman List Data -->
+
+      </section>
+    </div>
+    <!-- CONTENT -->
+
+    <footer class="main-footer text-center">
+      <strong>Copyright &copy; 2023</strong> Company
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/v/bs/jq-3.6.0/dt-1.13.4/r-2.4.1/datatables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/js/adminlte.min.js"></script>
+</body>
+
+</html>
